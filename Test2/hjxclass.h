@@ -16,6 +16,7 @@ public:
         return true;
     }
     void  setTitle(QString t){title = t;}
+
     QString  getTitle(){return "null";}
     void  setEnabled(bool e) { enabled = !e; }
 
@@ -24,11 +25,11 @@ public:
     QString title;
 public slots:
     void slots1(int i,double j);
-    double slots2(double j);
+    double sl2(double j);
 signals:
     void signalFunc(double);
-    int signalFunc2(char, int);
-    int signalFunc3(char, int);
+    int sf2(char, int);
+    int signalFunc3(QString, int,double);
     int sf4(char, int);
 
 };
